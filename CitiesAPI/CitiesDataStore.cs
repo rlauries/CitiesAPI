@@ -44,7 +44,7 @@ namespace CitiesAPI
                     {
                         new PointOfInterestDto
                         {
-                            Id = 1,
+                            Id = 3,
                             Name = "Aberowen",
                             Description = "The most visited church"
                         }
@@ -54,8 +54,16 @@ namespace CitiesAPI
                 {
                     Id = 3,
                     Name = "Paris",
-                    Description = "The one with a big tower."
-
+                    Description = "The one with a big tower.",
+                    PointOfInterests  = new List<PointOfInterestDto>()
+                    {
+                        new PointOfInterestDto
+                        {
+                            Id = 4,
+                            Name = "Eiffer Tower",
+                            Description = "The most Tower in the World "
+                        }
+                    }
                 }
 
             };
