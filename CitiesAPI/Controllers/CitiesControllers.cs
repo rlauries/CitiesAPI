@@ -13,6 +13,23 @@ namespace CitiesAPI.Controllers
         {
             return Ok(CitiesDataStore.Current.Cities);
         }
+        
+        [HttpGet("allpoints")]
+        public ActionResult<PointOfInterestDto> GetAllPointsOfInterest()
+        {
+            var allPointOfInterest = new List<PointOfInterestDto>();
+            int cityCount = CitiesDataStore.Current.Cities.Count;
+            for (int i = 0; i < cityCount; i++)
+            {
+                int pOfICount = CitiesDataStore.Current.Cities[i].PointOfInterests.Count;
+                for (int j = 0; j < pOfICount; j++)
+                {
+                    allPointOfInterest.Add(CitiesDataStore.Current.Cities[i].PointOfInterests[j]);
+                }
+
+            }
+            return Ok(allPointOfInterest);
+        }
 
         [HttpGet("{id}")]
         public ActionResult<CityDto> GetCityById(int id)
