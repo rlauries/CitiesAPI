@@ -1,10 +1,11 @@
 ﻿using CitiesAPI.Models;
 using Microsoft.AspNetCore.Http;
+
 using Microsoft.AspNetCore.Mvc;
 
 namespace CitiesAPI.Controllers
 {
-    [Route("api/cities/{cityid}/pointofinterests")]
+    [Route("api/cities/{cityid}/pointofinterestid")]
     [ApiController]
     public class PointOfInterestController : ControllerBase
     {
@@ -86,6 +87,44 @@ namespace CitiesAPI.Controllers
             pointOfInterestFromStore.Description = pointOfInterest.Description;
            
             return NoContent();
+        }
+
+        [HttpPatch("{pointofinterestid}")]
+
+        public ActionResult PartiallyUpdatePointOfInterest(int cityId, int pointOfInterestId,
+            JsonPatchDocument<PointOfInterestForUpdateDto> patchDocument)
+        {
+            var city = CitiesDataStore.Current.Cities
+                       .FirstOrDefault(c => c.Id == cityId);
+            if (city == null)
+                return NotFound();
+            var pointOfInterestFromStore = city.PointOfInterests
+                       .FirstOrDefault(p => p.Id == pointOfInterestId);
+            if (pointOfInterestFromStore == null)
+                return NotFound();
+
+            var pointOfInterestToPatch = new PointOfInterestForUpdateDto()
+            {
+                Name = pointOfInterestFromStore.Name,
+                Description = pointOfInterestFromStore.Description
+
+            };
+            
+            //ModelState validate the parameters 
+
+            patchDocument.ApplyTo(pointOfInterestToPatch, ModelState);
+            if(!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            //Validate ModelState
+            if(!TryValidateModel(pointOfInterestToPatch)) 
+                return BadRequest(ModelState);
+
+            pointOfInterestFromStore.Name = pointOfInterestToPatch.Name;
+            pointOfInterestFromStore.Description = pointOfInterestToPatch.Description;
+
+            return NoContent();
+
         }
 
 
