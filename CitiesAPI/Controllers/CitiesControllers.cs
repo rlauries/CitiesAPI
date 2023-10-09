@@ -8,23 +8,29 @@ namespace CitiesAPI.Controllers
     [ApiController]
     public class CitiesControllers : ControllerBase
     {
+        private readonly CitiesDataStore _citiesDataStore;
+
+        public CitiesControllers(CitiesDataStore citiesDataStore)
+        {
+            _citiesDataStore = citiesDataStore ?? throw new ArgumentNullException(nameof(citiesDataStore));
+        }
         [HttpGet]
         public ActionResult<CityDto> GetCities()
         {
-            return Ok(CitiesDataStore.Current.Cities);
+            return Ok(_citiesDataStore.Cities);
         }
         
         [HttpGet("allpoints")]
         public ActionResult<PointOfInterestDto> GetAllPointsOfInterest()
         {
             var allPointOfInterest = new List<PointOfInterestDto>();
-            int cityCount = CitiesDataStore.Current.Cities.Count;
+            int cityCount = _citiesDataStore.Cities.Count;
             for (int i = 0; i < cityCount; i++)
             {
-                int pOfICount = CitiesDataStore.Current.Cities[i].PointOfInterests.Count;
+                int pOfICount = _citiesDataStore.Cities[i].PointOfInterests.Count;
                 for (int j = 0; j < pOfICount; j++)
                 {
-                    allPointOfInterest.Add(CitiesDataStore.Current.Cities[i].PointOfInterests[j]);
+                    allPointOfInterest.Add(_citiesDataStore.Cities[i].PointOfInterests[j]);
                 }
 
             }
@@ -34,7 +40,7 @@ namespace CitiesAPI.Controllers
         [HttpGet("{id}")]
         public ActionResult<CityDto> GetCityById(int id)
         {
-            var cityToReturn = CitiesDataStore.Current.Cities.FirstOrDefault(c => c.Id == id);
+            var cityToReturn = _citiesDataStore.Cities.FirstOrDefault(c => c.Id == id);
             if (cityToReturn == null)
             {
                 return NotFound();
