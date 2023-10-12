@@ -1,0 +1,358 @@
+2023-10-11 06:06:10.086 -04:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-10-11 06:06:10.653 -04:00 [DBG] Entity Framework Core 7.0.11 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:7.0.11' with options: None
+2023-10-11 06:06:10.791 -04:00 [DBG] 'CityInfoContext' disposed.
+2023-10-11 06:14:34.076 -04:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-10-11 06:14:34.593 -04:00 [DBG] Entity Framework Core 7.0.11 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:7.0.11' with options: None
+2023-10-11 06:14:34.617 -04:00 [DBG] Creating DbConnection.
+2023-10-11 06:14:34.634 -04:00 [DBG] Created DbConnection. (13ms).
+2023-10-11 06:14:34.638 -04:00 [DBG] Migrating using database 'main' on server 'CityInfo.db'.
+2023-10-11 06:14:34.642 -04:00 [DBG] Creating DbConnection.
+2023-10-11 06:14:34.642 -04:00 [DBG] Created DbConnection. (0ms).
+2023-10-11 06:14:34.644 -04:00 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2023-10-11 06:14:34.652 -04:00 [DBG] An error occurred using the connection to database 'main' on server 'CityInfo.db'.
+2023-10-11 06:14:34.654 -04:00 [DBG] Disposing connection to database 'main' on server 'CityInfo.db'.
+2023-10-11 06:14:34.659 -04:00 [DBG] Disposed connection to database 'main' on server 'CityInfo.db' (0ms).
+2023-10-11 06:14:34.659 -04:00 [DBG] Creating DbConnection.
+2023-10-11 06:14:34.659 -04:00 [DBG] Created DbConnection. (0ms).
+2023-10-11 06:14:34.659 -04:00 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2023-10-11 06:14:34.659 -04:00 [DBG] An error occurred using the connection to database 'main' on server 'CityInfo.db'.
+2023-10-11 06:14:34.659 -04:00 [DBG] Disposing connection to database 'main' on server 'CityInfo.db'.
+2023-10-11 06:14:34.659 -04:00 [DBG] Disposed connection to database 'main' on server 'CityInfo.db' (0ms).
+2023-10-11 06:14:34.660 -04:00 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2023-10-11 06:14:34.666 -04:00 [DBG] Opened connection to database 'main' on server 'C:\Users\Jevito\source\repos\CitiesAPI\CitiesAPI\CityInfo.db'.
+2023-10-11 06:14:34.674 -04:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-10-11 06:14:34.680 -04:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (5ms).
+2023-10-11 06:14:34.680 -04:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (9ms).
+2023-10-11 06:14:34.688 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA journal_mode = 'wal';
+2023-10-11 06:14:34.704 -04:00 [INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA journal_mode = 'wal';
+2023-10-11 06:14:34.706 -04:00 [DBG] Closing connection to database 'main' on server 'C:\Users\Jevito\source\repos\CitiesAPI\CitiesAPI\CityInfo.db'.
+2023-10-11 06:14:34.708 -04:00 [DBG] Closed connection to database 'main' on server 'CityInfo.db' (2ms).
+2023-10-11 06:14:34.777 -04:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-10-11 06:14:34.777 -04:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-10-11 06:14:34.778 -04:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2023-10-11 06:14:34.778 -04:00 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2023-10-11 06:14:34.778 -04:00 [DBG] Opened connection to database 'main' on server 'C:\Users\Jevito\source\repos\CitiesAPI\CitiesAPI\CityInfo.db'.
+2023-10-11 06:14:34.778 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "__EFMigrationsHistory" (
+    "MigrationId" TEXT NOT NULL CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY,
+    "ProductVersion" TEXT NOT NULL
+);
+2023-10-11 06:14:34.782 -04:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "__EFMigrationsHistory" (
+    "MigrationId" TEXT NOT NULL CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY,
+    "ProductVersion" TEXT NOT NULL
+);
+2023-10-11 06:14:34.783 -04:00 [DBG] Closing connection to database 'main' on server 'C:\Users\Jevito\source\repos\CitiesAPI\CitiesAPI\CityInfo.db'.
+2023-10-11 06:14:34.783 -04:00 [DBG] Closed connection to database 'main' on server 'CityInfo.db' (0ms).
+2023-10-11 06:14:34.784 -04:00 [DBG] Creating DbConnection.
+2023-10-11 06:14:34.784 -04:00 [DBG] Created DbConnection. (0ms).
+2023-10-11 06:14:34.784 -04:00 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2023-10-11 06:14:34.784 -04:00 [DBG] Opened connection to database 'main' on server 'C:\Users\Jevito\source\repos\CitiesAPI\CitiesAPI\CityInfo.db'.
+2023-10-11 06:14:34.785 -04:00 [DBG] Disposing connection to database 'main' on server 'CityInfo.db'.
+2023-10-11 06:14:34.785 -04:00 [DBG] Disposed connection to database 'main' on server 'CityInfo.db' (0ms).
+2023-10-11 06:14:34.789 -04:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2023-10-11 06:14:34.789 -04:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2023-10-11 06:14:34.789 -04:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (0ms).
+2023-10-11 06:14:34.789 -04:00 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2023-10-11 06:14:34.789 -04:00 [DBG] Opened connection to database 'main' on server 'C:\Users\Jevito\source\repos\CitiesAPI\CitiesAPI\CityInfo.db'.
+2023-10-11 06:14:34.789 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2023-10-11 06:14:34.791 -04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2023-10-11 06:14:34.791 -04:00 [DBG] Closing connection to database 'main' on server 'C:\Users\Jevito\source\repos\CitiesAPI\CitiesAPI\CityInfo.db'.
+2023-10-11 06:14:34.791 -04:00 [DBG] Closed connection to database 'main' on server 'CityInfo.db' (0ms).
+2023-10-11 06:14:34.792 -04:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-10-11 06:14:34.792 -04:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2023-10-11 06:14:34.792 -04:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2023-10-11 06:14:34.792 -04:00 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2023-10-11 06:14:34.792 -04:00 [DBG] Opened connection to database 'main' on server 'C:\Users\Jevito\source\repos\CitiesAPI\CitiesAPI\CityInfo.db'.
+2023-10-11 06:14:34.792 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2023-10-11 06:14:34.793 -04:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2023-10-11 06:14:34.794 -04:00 [DBG] Closing data reader to 'main' on server 'C:\Users\Jevito\source\repos\CitiesAPI\CitiesAPI\CityInfo.db'.
+2023-10-11 06:14:34.795 -04:00 [DBG] A data reader for 'main' on server 'C:\Users\Jevito\source\repos\CitiesAPI\CitiesAPI\CityInfo.db' is being disposed after spending 1ms reading results.
+2023-10-11 06:14:34.795 -04:00 [DBG] Closing connection to database 'main' on server 'C:\Users\Jevito\source\repos\CitiesAPI\CitiesAPI\CityInfo.db'.
+2023-10-11 06:14:34.795 -04:00 [DBG] Closed connection to database 'main' on server 'CityInfo.db' (0ms).
+2023-10-11 06:14:34.803 -04:00 [INF] Applying migration '20231011100610_CitiesApiDBInitialMigration'.
+2023-10-11 06:14:34.821 -04:00 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2023-10-11 06:14:34.821 -04:00 [DBG] Opened connection to database 'main' on server 'C:\Users\Jevito\source\repos\CitiesAPI\CitiesAPI\CityInfo.db'.
+2023-10-11 06:14:34.822 -04:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2023-10-11 06:14:34.824 -04:00 [DBG] Began transaction with isolation level 'Serializable'.
+2023-10-11 06:14:34.824 -04:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-10-11 06:14:34.824 -04:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-10-11 06:14:34.824 -04:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2023-10-11 06:14:34.824 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Cities" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_Cities" PRIMARY KEY AUTOINCREMENT,
+    "Name" TEXT NOT NULL,
+    "Description" TEXT NOT NULL
+);
+2023-10-11 06:14:34.825 -04:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Cities" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_Cities" PRIMARY KEY AUTOINCREMENT,
+    "Name" TEXT NOT NULL,
+    "Description" TEXT NOT NULL
+);
+2023-10-11 06:14:34.825 -04:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-10-11 06:14:34.825 -04:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-10-11 06:14:34.825 -04:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2023-10-11 06:14:34.825 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "PointOfInterests" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_PointOfInterests" PRIMARY KEY AUTOINCREMENT,
+    "Name" TEXT NOT NULL,
+    "Description" TEXT NOT NULL,
+    "CityId" INTEGER NOT NULL,
+    CONSTRAINT "FK_PointOfInterests_Cities_CityId" FOREIGN KEY ("CityId") REFERENCES "Cities" ("Id") ON DELETE CASCADE
+);
+2023-10-11 06:14:34.825 -04:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "PointOfInterests" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_PointOfInterests" PRIMARY KEY AUTOINCREMENT,
+    "Name" TEXT NOT NULL,
+    "Description" TEXT NOT NULL,
+    "CityId" INTEGER NOT NULL,
+    CONSTRAINT "FK_PointOfInterests_Cities_CityId" FOREIGN KEY ("CityId") REFERENCES "Cities" ("Id") ON DELETE CASCADE
+);
+2023-10-11 06:14:34.825 -04:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-10-11 06:14:34.825 -04:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-10-11 06:14:34.825 -04:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2023-10-11 06:14:34.825 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_PointOfInterests_CityId" ON "PointOfInterests" ("CityId");
+2023-10-11 06:14:34.825 -04:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_PointOfInterests_CityId" ON "PointOfInterests" ("CityId");
+2023-10-11 06:14:34.825 -04:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-10-11 06:14:34.825 -04:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-10-11 06:14:34.825 -04:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2023-10-11 06:14:34.825 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20231011100610_CitiesApiDBInitialMigration', '7.0.11');
+2023-10-11 06:14:34.825 -04:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20231011100610_CitiesApiDBInitialMigration', '7.0.11');
+2023-10-11 06:14:34.826 -04:00 [DBG] Committing transaction.
+2023-10-11 06:14:34.828 -04:00 [DBG] Committed transaction.
+2023-10-11 06:14:34.829 -04:00 [DBG] Disposing transaction.
+2023-10-11 06:14:34.829 -04:00 [DBG] Closing connection to database 'main' on server 'C:\Users\Jevito\source\repos\CitiesAPI\CitiesAPI\CityInfo.db'.
+2023-10-11 06:14:34.829 -04:00 [DBG] Closed connection to database 'main' on server 'CityInfo.db' (0ms).
+2023-10-11 06:14:34.830 -04:00 [DBG] 'CityInfoContext' disposed.
+2023-10-11 06:14:34.830 -04:00 [DBG] Disposing connection to database 'main' on server 'CityInfo.db'.
+2023-10-11 06:14:34.830 -04:00 [DBG] Disposed connection to database 'main' on server 'CityInfo.db' (0ms).
+2023-10-11 19:55:48.214 -04:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-10-11 19:55:48.866 -04:00 [DBG] Entity Framework Core 7.0.11 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:7.0.11' with options: None
+2023-10-11 19:55:49.058 -04:00 [DBG] 'CityInfoContext' disposed.
+2023-10-11 19:56:29.830 -04:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-10-11 19:56:30.354 -04:00 [DBG] Entity Framework Core 7.0.11 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:7.0.11' with options: None
+2023-10-11 19:56:30.380 -04:00 [DBG] Creating DbConnection.
+2023-10-11 19:56:30.399 -04:00 [DBG] Created DbConnection. (15ms).
+2023-10-11 19:56:30.403 -04:00 [DBG] Migrating using database 'main' on server 'CityInfo.db'.
+2023-10-11 19:56:30.406 -04:00 [DBG] Creating DbConnection.
+2023-10-11 19:56:30.407 -04:00 [DBG] Created DbConnection. (0ms).
+2023-10-11 19:56:30.408 -04:00 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2023-10-11 19:56:30.419 -04:00 [DBG] Opened connection to database 'main' on server 'C:\Users\Jevito\source\repos\CitiesAPI\CitiesAPI\CityInfo.db'.
+2023-10-11 19:56:30.423 -04:00 [DBG] Disposing connection to database 'main' on server 'CityInfo.db'.
+2023-10-11 19:56:30.427 -04:00 [DBG] Disposed connection to database 'main' on server 'CityInfo.db' (0ms).
+2023-10-11 19:56:30.436 -04:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2023-10-11 19:56:30.442 -04:00 [DBG] Created DbCommand for 'ExecuteScalar' (5ms).
+2023-10-11 19:56:30.442 -04:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (9ms).
+2023-10-11 19:56:30.442 -04:00 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2023-10-11 19:56:30.445 -04:00 [DBG] Opened connection to database 'main' on server 'C:\Users\Jevito\source\repos\CitiesAPI\CitiesAPI\CityInfo.db'.
+2023-10-11 19:56:30.450 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2023-10-11 19:56:30.464 -04:00 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2023-10-11 19:56:30.466 -04:00 [DBG] Closing connection to database 'main' on server 'C:\Users\Jevito\source\repos\CitiesAPI\CitiesAPI\CityInfo.db'.
+2023-10-11 19:56:30.468 -04:00 [DBG] Closed connection to database 'main' on server 'CityInfo.db' (2ms).
+2023-10-11 19:56:30.469 -04:00 [DBG] Creating DbConnection.
+2023-10-11 19:56:30.469 -04:00 [DBG] Created DbConnection. (0ms).
+2023-10-11 19:56:30.469 -04:00 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2023-10-11 19:56:30.469 -04:00 [DBG] Opened connection to database 'main' on server 'C:\Users\Jevito\source\repos\CitiesAPI\CitiesAPI\CityInfo.db'.
+2023-10-11 19:56:30.469 -04:00 [DBG] Disposing connection to database 'main' on server 'CityInfo.db'.
+2023-10-11 19:56:30.469 -04:00 [DBG] Disposed connection to database 'main' on server 'CityInfo.db' (0ms).
+2023-10-11 19:56:30.469 -04:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2023-10-11 19:56:30.469 -04:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2023-10-11 19:56:30.469 -04:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (0ms).
+2023-10-11 19:56:30.469 -04:00 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2023-10-11 19:56:30.469 -04:00 [DBG] Opened connection to database 'main' on server 'C:\Users\Jevito\source\repos\CitiesAPI\CitiesAPI\CityInfo.db'.
+2023-10-11 19:56:30.469 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2023-10-11 19:56:30.470 -04:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2023-10-11 19:56:30.470 -04:00 [DBG] Closing connection to database 'main' on server 'C:\Users\Jevito\source\repos\CitiesAPI\CitiesAPI\CityInfo.db'.
+2023-10-11 19:56:30.470 -04:00 [DBG] Closed connection to database 'main' on server 'CityInfo.db' (0ms).
+2023-10-11 19:56:30.479 -04:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-10-11 19:56:30.479 -04:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2023-10-11 19:56:30.479 -04:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2023-10-11 19:56:30.479 -04:00 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2023-10-11 19:56:30.479 -04:00 [DBG] Opened connection to database 'main' on server 'C:\Users\Jevito\source\repos\CitiesAPI\CitiesAPI\CityInfo.db'.
+2023-10-11 19:56:30.479 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2023-10-11 19:56:30.480 -04:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2023-10-11 19:56:30.481 -04:00 [DBG] Closing data reader to 'main' on server 'C:\Users\Jevito\source\repos\CitiesAPI\CitiesAPI\CityInfo.db'.
+2023-10-11 19:56:30.482 -04:00 [DBG] A data reader for 'main' on server 'C:\Users\Jevito\source\repos\CitiesAPI\CitiesAPI\CityInfo.db' is being disposed after spending 1ms reading results.
+2023-10-11 19:56:30.482 -04:00 [DBG] Closing connection to database 'main' on server 'C:\Users\Jevito\source\repos\CitiesAPI\CitiesAPI\CityInfo.db'.
+2023-10-11 19:56:30.482 -04:00 [DBG] Closed connection to database 'main' on server 'CityInfo.db' (0ms).
+2023-10-11 19:56:30.490 -04:00 [INF] Applying migration '20231011235548_DataSeed'.
+2023-10-11 19:56:30.527 -04:00 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2023-10-11 19:56:30.527 -04:00 [DBG] Opened connection to database 'main' on server 'C:\Users\Jevito\source\repos\CitiesAPI\CitiesAPI\CityInfo.db'.
+2023-10-11 19:56:30.528 -04:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2023-10-11 19:56:30.530 -04:00 [DBG] Began transaction with isolation level 'Serializable'.
+2023-10-11 19:56:30.719 -04:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-10-11 19:56:30.719 -04:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-10-11 19:56:30.720 -04:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2023-10-11 19:56:30.721 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Cities" ("Id", "Description", "Name")
+VALUES (1, 'The One with that big park.', 'New York City');
+INSERT INTO "Cities" ("Id", "Description", "Name")
+VALUES (2, 'The one with the cathedral that was never finished.', 'Antwerp');
+INSERT INTO "Cities" ("Id", "Description", "Name")
+VALUES (3, 'The One with that big tower.', 'Paris');
+2023-10-11 19:56:30.721 -04:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Cities" ("Id", "Description", "Name")
+VALUES (1, 'The One with that big park.', 'New York City');
+INSERT INTO "Cities" ("Id", "Description", "Name")
+VALUES (2, 'The one with the cathedral that was never finished.', 'Antwerp');
+INSERT INTO "Cities" ("Id", "Description", "Name")
+VALUES (3, 'The One with that big tower.', 'Paris');
+2023-10-11 19:56:30.721 -04:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-10-11 19:56:30.721 -04:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-10-11 19:56:30.721 -04:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2023-10-11 19:56:30.721 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "PointOfInterests" ("Id", "CityId", "Description", "Name")
+VALUES (1, 1, 'The most visited urban park in the US', 'Central Park');
+INSERT INTO "PointOfInterests" ("Id", "CityId", "Description", "Name")
+VALUES (2, 1, 'A 102-story skyscraper located in Midtown Manhattan.', 'Empire State Building.');
+INSERT INTO "PointOfInterests" ("Id", "CityId", "Description", "Name")
+VALUES (3, 2, 'A gothic style  cathedral.', 'Cathedral');
+INSERT INTO "PointOfInterests" ("Id", "CityId", "Description", "Name")
+VALUES (5, 3, 'A wrought iron lattice tower in the Champ de Mars.', 'Eiffel Tower');
+INSERT INTO "PointOfInterests" ("Id", "CityId", "Description", "Name")
+VALUES (6, 3, 'The world''s largest museum.', 'The Louvre');
+2023-10-11 19:56:30.733 -04:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "PointOfInterests" ("Id", "CityId", "Description", "Name")
+VALUES (1, 1, 'The most visited urban park in the US', 'Central Park');
+INSERT INTO "PointOfInterests" ("Id", "CityId", "Description", "Name")
+VALUES (2, 1, 'A 102-story skyscraper located in Midtown Manhattan.', 'Empire State Building.');
+INSERT INTO "PointOfInterests" ("Id", "CityId", "Description", "Name")
+VALUES (3, 2, 'A gothic style  cathedral.', 'Cathedral');
+INSERT INTO "PointOfInterests" ("Id", "CityId", "Description", "Name")
+VALUES (5, 3, 'A wrought iron lattice tower in the Champ de Mars.', 'Eiffel Tower');
+INSERT INTO "PointOfInterests" ("Id", "CityId", "Description", "Name")
+VALUES (6, 3, 'The world''s largest museum.', 'The Louvre');
+2023-10-11 19:56:30.733 -04:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-10-11 19:56:30.733 -04:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-10-11 19:56:30.733 -04:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2023-10-11 19:56:30.733 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20231011235548_DataSeed', '7.0.11');
+2023-10-11 19:56:30.734 -04:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20231011235548_DataSeed', '7.0.11');
+2023-10-11 19:56:30.734 -04:00 [DBG] Committing transaction.
+2023-10-11 19:56:30.738 -04:00 [DBG] Committed transaction.
+2023-10-11 19:56:30.738 -04:00 [DBG] Disposing transaction.
+2023-10-11 19:56:30.739 -04:00 [DBG] Closing connection to database 'main' on server 'C:\Users\Jevito\source\repos\CitiesAPI\CitiesAPI\CityInfo.db'.
+2023-10-11 19:56:30.739 -04:00 [DBG] Closed connection to database 'main' on server 'CityInfo.db' (0ms).
+2023-10-11 19:56:30.740 -04:00 [DBG] 'CityInfoContext' disposed.
+2023-10-11 19:56:30.740 -04:00 [DBG] Disposing connection to database 'main' on server 'CityInfo.db'.
+2023-10-11 19:56:30.740 -04:00 [DBG] Disposed connection to database 'main' on server 'CityInfo.db' (0ms).
+2023-10-11 20:00:32.399 -04:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-10-11 20:00:32.913 -04:00 [DBG] Entity Framework Core 7.0.11 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:7.0.11' with options: None
+2023-10-11 20:00:33.079 -04:00 [DBG] 'CityInfoContext' disposed.
+2023-10-11 20:01:53.414 -04:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-10-11 20:01:53.925 -04:00 [DBG] Entity Framework Core 7.0.11 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:7.0.11' with options: None
+2023-10-11 20:01:53.939 -04:00 [DBG] Creating DbConnection.
+2023-10-11 20:01:53.954 -04:00 [DBG] Created DbConnection. (11ms).
+2023-10-11 20:01:53.957 -04:00 [DBG] Migrating using database 'main' on server 'CityInfo.db'.
+2023-10-11 20:01:53.960 -04:00 [DBG] Creating DbConnection.
+2023-10-11 20:01:53.960 -04:00 [DBG] Created DbConnection. (0ms).
+2023-10-11 20:01:53.961 -04:00 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2023-10-11 20:01:53.968 -04:00 [DBG] Opened connection to database 'main' on server 'C:\Users\Jevito\source\repos\CitiesAPI\CitiesAPI\CityInfo.db'.
+2023-10-11 20:01:53.970 -04:00 [DBG] Disposing connection to database 'main' on server 'CityInfo.db'.
+2023-10-11 20:01:53.974 -04:00 [DBG] Disposed connection to database 'main' on server 'CityInfo.db' (0ms).
+2023-10-11 20:01:53.983 -04:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2023-10-11 20:01:53.989 -04:00 [DBG] Created DbCommand for 'ExecuteScalar' (5ms).
+2023-10-11 20:01:53.990 -04:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (10ms).
+2023-10-11 20:01:53.990 -04:00 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2023-10-11 20:01:53.992 -04:00 [DBG] Opened connection to database 'main' on server 'C:\Users\Jevito\source\repos\CitiesAPI\CitiesAPI\CityInfo.db'.
+2023-10-11 20:01:53.998 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2023-10-11 20:01:54.011 -04:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2023-10-11 20:01:54.012 -04:00 [DBG] Closing connection to database 'main' on server 'C:\Users\Jevito\source\repos\CitiesAPI\CitiesAPI\CityInfo.db'.
+2023-10-11 20:01:54.014 -04:00 [DBG] Closed connection to database 'main' on server 'CityInfo.db' (2ms).
+2023-10-11 20:01:54.015 -04:00 [DBG] Creating DbConnection.
+2023-10-11 20:01:54.015 -04:00 [DBG] Created DbConnection. (0ms).
+2023-10-11 20:01:54.015 -04:00 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2023-10-11 20:01:54.016 -04:00 [DBG] Opened connection to database 'main' on server 'C:\Users\Jevito\source\repos\CitiesAPI\CitiesAPI\CityInfo.db'.
+2023-10-11 20:01:54.016 -04:00 [DBG] Disposing connection to database 'main' on server 'CityInfo.db'.
+2023-10-11 20:01:54.016 -04:00 [DBG] Disposed connection to database 'main' on server 'CityInfo.db' (0ms).
+2023-10-11 20:01:54.016 -04:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2023-10-11 20:01:54.016 -04:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2023-10-11 20:01:54.016 -04:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (0ms).
+2023-10-11 20:01:54.016 -04:00 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2023-10-11 20:01:54.016 -04:00 [DBG] Opened connection to database 'main' on server 'C:\Users\Jevito\source\repos\CitiesAPI\CitiesAPI\CityInfo.db'.
+2023-10-11 20:01:54.016 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2023-10-11 20:01:54.016 -04:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2023-10-11 20:01:54.016 -04:00 [DBG] Closing connection to database 'main' on server 'C:\Users\Jevito\source\repos\CitiesAPI\CitiesAPI\CityInfo.db'.
+2023-10-11 20:01:54.016 -04:00 [DBG] Closed connection to database 'main' on server 'CityInfo.db' (0ms).
+2023-10-11 20:01:54.025 -04:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-10-11 20:01:54.026 -04:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2023-10-11 20:01:54.026 -04:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2023-10-11 20:01:54.026 -04:00 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2023-10-11 20:01:54.026 -04:00 [DBG] Opened connection to database 'main' on server 'C:\Users\Jevito\source\repos\CitiesAPI\CitiesAPI\CityInfo.db'.
+2023-10-11 20:01:54.026 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2023-10-11 20:01:54.026 -04:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2023-10-11 20:01:54.028 -04:00 [DBG] Closing data reader to 'main' on server 'C:\Users\Jevito\source\repos\CitiesAPI\CitiesAPI\CityInfo.db'.
+2023-10-11 20:01:54.029 -04:00 [DBG] A data reader for 'main' on server 'C:\Users\Jevito\source\repos\CitiesAPI\CitiesAPI\CityInfo.db' is being disposed after spending 1ms reading results.
+2023-10-11 20:01:54.029 -04:00 [DBG] Closing connection to database 'main' on server 'C:\Users\Jevito\source\repos\CitiesAPI\CitiesAPI\CityInfo.db'.
+2023-10-11 20:01:54.029 -04:00 [DBG] Closed connection to database 'main' on server 'CityInfo.db' (0ms).
+2023-10-11 20:01:54.036 -04:00 [INF] Applying migration '20231012000033_DataSeed-0.2'.
+2023-10-11 20:01:54.065 -04:00 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2023-10-11 20:01:54.127 -04:00 [DBG] Opened connection to database 'main' on server 'C:\Users\Jevito\source\repos\CitiesAPI\CitiesAPI\CityInfo.db'.
+2023-10-11 20:01:54.128 -04:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2023-10-11 20:01:54.130 -04:00 [DBG] Began transaction with isolation level 'Serializable'.
+2023-10-11 20:01:54.131 -04:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-10-11 20:01:54.131 -04:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-10-11 20:01:54.131 -04:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2023-10-11 20:01:54.131 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "PointOfInterests" ("Id", "CityId", "Description", "Name")
+VALUES (4, 2, 'Railway architecture in Belgium', 'Antwerp Central Station');
+2023-10-11 20:01:54.132 -04:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "PointOfInterests" ("Id", "CityId", "Description", "Name")
+VALUES (4, 2, 'Railway architecture in Belgium', 'Antwerp Central Station');
+2023-10-11 20:01:54.132 -04:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-10-11 20:01:54.132 -04:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-10-11 20:01:54.132 -04:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2023-10-11 20:01:54.132 -04:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20231012000033_DataSeed-0.2', '7.0.11');
+2023-10-11 20:01:54.132 -04:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20231012000033_DataSeed-0.2', '7.0.11');
+2023-10-11 20:01:54.132 -04:00 [DBG] Committing transaction.
+2023-10-11 20:01:54.148 -04:00 [DBG] Committed transaction.
+2023-10-11 20:01:54.148 -04:00 [DBG] Disposing transaction.
+2023-10-11 20:01:54.149 -04:00 [DBG] Closing connection to database 'main' on server 'C:\Users\Jevito\source\repos\CitiesAPI\CitiesAPI\CityInfo.db'.
+2023-10-11 20:01:54.149 -04:00 [DBG] Closed connection to database 'main' on server 'CityInfo.db' (0ms).
+2023-10-11 20:01:54.149 -04:00 [DBG] 'CityInfoContext' disposed.
+2023-10-11 20:01:54.150 -04:00 [DBG] Disposing connection to database 'main' on server 'CityInfo.db'.
+2023-10-11 20:01:54.150 -04:00 [DBG] Disposed connection to database 'main' on server 'CityInfo.db' (0ms).
