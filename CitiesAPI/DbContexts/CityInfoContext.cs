@@ -13,7 +13,7 @@ namespace CitiesAPI.DbContexts
         {
 
         }
-        //give access to OnModel Builder
+        //give access to Model Builder
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
