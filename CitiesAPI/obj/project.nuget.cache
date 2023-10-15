@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "EEriqOvXkCmm47mRGjwXnrKuwIGKMDquRO2TT0KlO+gkbSwfdGrqrpUa2ddC7iRvArbgu+uNBdDYxzU6TTU0JQ==",
+  "dgSpecHash": "/heNZUY5o9VyRGDk2H8gYHLZXXH36JdZGfhxfJt8oegxaM4x2u4zvoVngBTnWLqduXSX7ofGLX1csrXeNyr10A==",
   "success": true,
   "projectFilePath": "C:\\Users\\Jevito\\source\\repos\\CitiesAPI\\CitiesAPI\\CitiesAPI.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Jevito\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\Jevito\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\Jevito\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Jevito\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\7.0.11\\microsoft.aspnetcore.jsonpatch.7.0.11.nupkg.sha512",
     "C:\\Users\\Jevito\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\6.0.10\\microsoft.aspnetcore.mvc.newtonsoftjson.6.0.10.nupkg.sha512",

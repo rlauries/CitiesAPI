@@ -1,4 +1,6 @@
-﻿using CitiesAPI.Models;
+﻿using AutoMapper;
+using CitiesAPI.Models;
+using CitiesAPI.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -8,44 +10,61 @@ namespace CitiesAPI.Controllers
     [ApiController]
     public class CitiesControllers : ControllerBase
     {
-        private readonly CitiesDataStore _citiesDataStore;
+        private readonly ICityInfoRepository _cityInfoRepository;
+        private readonly IMapper _mapper;
 
-        public CitiesControllers(CitiesDataStore citiesDataStore)
+        public CitiesControllers(ICityInfoRepository cityInfoRepository, IMapper mapper)
         {
-            _citiesDataStore = citiesDataStore ?? throw new ArgumentNullException(nameof(citiesDataStore));
+            _cityInfoRepository = cityInfoRepository;
+            _mapper = mapper;
         }
         [HttpGet]
-        public ActionResult<CityDto> GetCities()
+        public async Task<ActionResult<IEnumerable<CityWithoutPointOfInterestDto>>> GetCities()
         {
-            return Ok(_citiesDataStore.Cities);
-        }
-        
-        [HttpGet("allpoints")]
-        public ActionResult<PointOfInterestDto> GetAllPointsOfInterest()
-        {
-            var allPointOfInterest = new List<PointOfInterestDto>();
-            int cityCount = _citiesDataStore.Cities.Count;
-            for (int i = 0; i < cityCount; i++)
-            {
-                int pOfICount = _citiesDataStore.Cities[i].PointOfInterests.Count;
-                for (int j = 0; j < pOfICount; j++)
-                {
-                    allPointOfInterest.Add(_citiesDataStore.Cities[i].PointOfInterests[j]);
-                }
+            var cityEntities = await _cityInfoRepository.GetAllCitiesAsync();
+            return Ok(_mapper.Map<IEnumerable<CityWithoutPointOfInterestDto>>(cityEntities));
+                                
+            
+            
+            // return Ok(_citiesDataStore.Cities);
 
-            }
-            return Ok(allPointOfInterest);
         }
+
+        //[HttpGet("allpoints")]
+        //public ActionResult<PointOfInterestDto> GetAllPointsOfInterest()
+        //{
+        //    var allPointOfInterest = new List<PointOfInterestDto>();
+        //    int cityCount = _citiesDataStore.Cities.Count;
+        //    for (int i = 0; i < cityCount; i++)
+        //    {
+        //        int pOfICount = _citiesDataStore.Cities[i].PointOfInterests.Count;
+        //        for (int j = 0; j < pOfICount; j++)
+        //        {
+        //            allPointOfInterest.Add(_citiesDataStore.Cities[i].PointOfInterests[j]);
+        //        }
+
+        //    }
+        //    return Ok(allPointOfInterest);
+        //}
 
         [HttpGet("{id}")]
-        public ActionResult<CityDto> GetCityById(int id)
+        public async Task<IActionResult> GetCityById(
+            int id, bool includePointsOfInterest = false)
         {
-            var cityToReturn = _citiesDataStore.Cities.FirstOrDefault(c => c.Id == id);
-            if (cityToReturn == null)
+            var city = await _cityInfoRepository.GetOneCityAsync(id, includePointsOfInterest);
+            if(city == null)
             {
                 return NotFound();
             }
-            return Ok(cityToReturn);
+            if(includePointsOfInterest)
+            {
+                return Ok(_mapper.Map<CityDto>(city));
+            }
+
+            return Ok(_mapper.Map<CityWithoutPointOfInterestDto>(city));
+
+
+            return Ok();
         }
 
 
